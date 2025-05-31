@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the luvin - Tranh Lego Custom Quà Tặng Độc Đáo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --black: #121212;
+            --dark-gray: #1e1e1e;
+            --gray: #333333;
+            --light-gray: #444444;
+            --pink: #e91e63;
+            --light-pink: #ff80ab;
+            --white: #ffffff;
+            --off-white: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-gray);
+            color: var(--white);
+            line-height: 1.6;
+            padding-bottom: 70px;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header & Hero Section */
+        .header {
+            background: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23333"/></svg>');
+            padding: 15px 0;
+            position: relative;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--pink);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--white);
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 15px;
+            text-align: center;
+        }
+
+        .tagline {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            max-width: 100%;
+            background: linear-gradient(to right, var(--pink), var(--light-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .sub-tagline {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: var(--light-pink);
+            font-weight: 500;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 280px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid var(--pink);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hero-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(233, 30, 99, 0.5);
+        }
+
+        .main-image {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button {
+            background-color: var(--pink);
+            color: white;
+            border: none;
+            padding: 14px 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 15px 0;
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .cta-button:hover {
+            background-color: var(--light-pink);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(233, 30, 99, 0.6);
+        }
+
+        .countdown {
+            font-size: 1rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 8px 15px;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+
+        .countdown span {
+            color: var(--pink);
+            font-weight: 700;
+        }
+
+        /* Product Section */
+        .section {
+            padding: 40px 0;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            text-align: center;
+            margin-bottom: 25px;
+            color: var(--white);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--pink);
+        }
+
+        .product-intro {
+            text-align: center;
+            max-width: 100%;
+            margin: 0 auto 30px;
+            font-size: 1rem;
+            padding: 0 10px;
+        }
+
+        .highlight {
+            color: var(--pink);
+            font-weight: 700;
+        }
+
+        .version-cards {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .version-card {
+            background-color: var(--gray);
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .version-card.selected {
+            border-color: var(--pink);
+            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+        }
+
+        .version-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            color: var(--pink);
+        }
+
+        .version-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 12px 0;
+            color: var(--pink);
+        }
+
+        .version-includes {
+            text-align: left;
+            margin-top: 12px;
+            font-size: 0.95rem;
+        }
+
+        .version-includes li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .version-includes li::before {
+            content: '•';
+            color: var(--pink);
+            position: absolute;
+            left: 0;
+        }
+
+        .customization-area {
+            margin-bottom: 30px;
+        }
+
+        .main-image-container {
+            background-color: var(--gray);
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            border: 2px solid var(--light-gray);
+            min-height: 300px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .main-image-container:hover {
+            transform: scale(1.01);
+            box-shadow: 0 0 15px rgba(233, 30, 99, 0.4);
+        }
+
+        .options-container {
+            width: 100%;
+        }
+
+        .options-section {
+            margin-bottom: 25px;
+            background-color: var(--gray);
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .options-title {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--pink);
+            display: flex;
+            align-items: center;
+        }
+
+        .options-title i {
+            margin-right: 10px;
+        }
+
+        .options-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: var(--light-gray);
+            margin-left: 15px;
+        }
+
+        .option-note {
+            background-color: var(--dark-gray);
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 0.95rem;
+        }
+
+        .option-note textarea {
+            width: 100%;
+            background-color: var(--black);
+            border: 1px solid var(--light-gray);
+            border-radius: 8px;
+            padding: 12px;
+            color: var(--white);
+            margin-top: 10px;
+            font-family: inherit;
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 12px;
+        }
+
+        .option-item {
+            background-color: var(--dark-gray);
+            border-radius: 8px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 2px solid transparent;
+            position: relative;
+        }
+
+        .option-item.selected {
+            border-color: var(--pink);
+            transform: scale(1.05);
+        }
+
+        .option-item:hover {
+            border-color: var(--light-pink);
+        }
+
+        .option-thumbnail {
+            width: 60px;
+            height: 60px;
+            background-color: var(--gray);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+            overflow: hidden;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        .option-thumbnail.color {
+            border: 1px solid var(--light-gray);
+        }
+
+        .option-name {
+            font-size: 0.8rem;
+            text-align: center;
+            margin-bottom: 3px;
+        }
+
+        .option-price {
+            font-size: 0.75rem;
+            color: var(--light-pink);
+            font-weight: 600;
+        }
+
+        .character-options {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .character-column {
+            background-color: var(--dark-gray);
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        .character-title {
+            font-size: 1rem;
+            margin-bottom: 12px;
+            text-align: center;
+            color: var(--light-pink);
+            font-weight: 600;
+        }
+
+        .color-option {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin: 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+
+        .color-option.selected {
+            border-color: var(--white);
+            transform: scale(1.15);
+        }
+
+        .color-options-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .option-group-title {
+            font-size: 0.95rem;
+            margin: 10px 0 8px;
+            color: var(--light-pink);
+            font-weight: 500;
+        }
+
+        /* Order Summary */
+        .order-summary {
+            background-color: var(--gray);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .summary-title {
+            font-size: 1.4rem;
+            margin-bottom: 18px;
+            color: var(--pink);
+            text-align: center;
+        }
+
+        .summary-items {
+            margin-bottom: 18px;
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--light-gray);
+            font-size: 0.95rem;
+        }
+
+        .summary-item.total {
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-bottom: none;
+            margin-top: 10px;
+            color: var(--pink);
+        }
+
+        .discount-section {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .discount-input {
+            flex: 1;
+            padding: 12px 15px;
+            border-radius: 30px;
+            border: 2px solid var(--light-gray);
+            background-color: var(--dark-gray);
+            color: var(--white);
+            font-family: inherit;
+        }
+
+        .apply-button {
+            padding: 12px 20px;
+            background-color: var(--pink);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .apply-button:hover {
+            background-color: var(--light-pink);
+        }
+
+        .discount-result {
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.95rem;
+            display: none;
+        }
+
+        .discount-result.valid {
+            background-color: rgba(76, 175, 80, 0.2);
+            color: #4CAF50;
+            display: block;
+        }
+
+        .discount-result.invalid {
+            background-color: rgba(244, 67, 54, 0.2);
+            color: #F44336;
+            display: block;
+        }
+
+        /* Checkout Form */
+        .checkout-form {
+            background-color: var(--gray);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .form-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: var(--pink);
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .required::after {
+            content: ' *';
+            color: var(--pink);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 14px;
+            border-radius: 8px;
+            border: 2px solid var(--light-gray);
+            background-color: var(--dark-gray);
+            color: var(--white);
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+
+        .form-input:focus {
+            border-color: var(--pink);
+            outline: none;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        .checkbox-group input {
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+
+        .policy-link {
+            color: var(--pink);
+            text-decoration: none;
+        }
+
+        .policy-link:hover {
+            text-decoration: underline;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--black);
+            padding: 40px 0 20px;
+        }
+
+        .policy-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .policy-box {
+            background-color: var(--gray);
+            padding: 18px;
+            border-radius: 10px;
+        }
+
+        .policy-box h3 {
+            color: var(--pink);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .policy-box h3 i {
+            margin-right: 10px;
+        }
+
+        .policy-list {
+            list-style-type: none;
+        }
+
+        .policy-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 0.95rem;
+        }
+
+        .policy-list li::before {
+            content: '•';
+            color: var(--pink);
+            position: absolute;
+            left: 0;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 25px 0;
+        }
+
+        .social-link {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: var(--gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-link.facebook {
+            background: linear-gradient(135deg, #3b5998, #4267B2);
+        }
+        
+        .social-link.instagram {
+            background: linear-gradient(135deg, #405DE6, #833AB4, #E1306C, #F77737);
+        }
+        
+        .social-link.tiktok {
+            background: linear-gradient(135deg, #000000, #00f2ea, #ff0050);
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px) scale(1.1);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--light-gray);
+            color: var(--light-gray);
+            font-size: 0.85rem;
+        }
+
+        .urgency-banner {
+            background-color: var(--pink);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            border: 2px solid var(--pink);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .close-modal:hover {
+            color: var(--pink);
+        }
+
+        /* Mobile Navigation */
+        .mobile-option-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--gray);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            z-index: 1000;
+            border-top: 1px solid var(--pink);
+        }
+
+        .option-nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--light-gray);
+            font-size: 0.8rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .option-nav-item.active {
+            color: var(--pink);
+        }
+
+        .option-nav-item i {
+            font-size: 1.2rem;
+            margin-bottom: 3px;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+            
+            .customization-area {
+                display: flex;
+                gap: 20px;
+            }
+            
+            .main-image-container {
+                flex: 1;
+                min-height: 400px;
+            }
+            
+            .options-container {
+                flex: 1;
+            }
+        }
+        
+        /* New additions */
+        .max-selection-info {
+            font-size: 0.8rem;
+            color: var(--light-pink);
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Modal for image zoom -->
+    <div class="modal" id="image-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="zoomed-image">
+    </div>
+
+    <!-- Header / Hero Section -->
+    <header class="header">
+        <div class="navbar">
+            <a href="#" class="logo">the<span>luvin</span></a>
+        </div>
+        
+        <div class="hero">
+            <h1 class="tagline">Tranh Lego Custom - Quà Tặng Độc Đáo Cho Mọi Dịp</h1>
+            <p class="sub-tagline">Món quà ý nghĩa cho Anniversary, Tốt nghiệp, Sinh nhật... thể hiện cá tính riêng của bạn!</p>
+            <div class="hero-image" id="main-hero-image">
+                <img src="https://via.placeholder.com/800x500/333333/ffffff?text=Chọn+option+để+xem+trước" alt="Preview sản phẩm" class="main-image" id="default-preview">
+            </div>
+            <div class="urgency-banner">
+                <i class="fas fa-fire"></i> Chỉ còn 10 suất giảm giá hôm nay!
+            </div>
+            <button class="cta-button">Đặt ngay - Giảm 10% với mã TILE10</button>
+            <div class="countdown">Chỉ còn <span id="countdown-timer">23:59:59</span> để nhận ưu đãi</div>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Tạo Tranh Lego Theo Ý Bạn</h2>
+            
+            <p class="product-intro">
+                Chúng tôi tạo tranh Lego đúng ý tưởng & phong cách của bạn. Sản phẩm hoàn toàn <span class="highlight">cá nhân hóa</span>, đòi hỏi sự đầu tư công sức thiết kế để tạo nên tác phẩm độc đáo của riêng bạn.
+            </p>
+            
+            <div class="version-cards">
+                <div class="version-card selected" data-version="1" data-price="235000">
+                    <h3>Version 1</h3>
+                    <div class="version-price">240.000₫</div>
+                    <p>(Chưa gồm phí ship)</p>
+                    <ul class="version-includes">
+                        <li>Khung tranh với <span class="highlight">01 Lego</span></li>
+                        <li>Túi đựng xinh xắn</li>
+                        <li>Thiệp viết tay</li>
+                        <li>Tặng box quà sang trọng</li>
+                    </ul>
+                </div>
+                
+                <div class="version-card" data-version="2" data-price="245000">
+                    <h3>Version 2</h3>
+                    <div class="version-price">245.000₫</div>
+                    <p>(Chưa gồm phí ship)</p>
+                    <ul class="version-includes">
+                        <li>Khung tranh với <span class="highlight">02 Lego</span></li>
+                        <li>Túi đựng xinh xắn</li>
+                        <li>Thiệp viết tay</li>
+                        <li>Tặng box quà sang trọng</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="customization-area">
+                <div class="main-image-container" id="zoom-image">
+                    <img src="https://via.placeholder.com/600x400/333333/ffffff?text=Chọn+option+để+xem+trước" alt="Preview sản phẩm" class="main-image" id="main-default">
+                </div>
+                
+                <div class="options-container">
+                    <!-- Background Options -->
+                    <div class="options-section">
+                        <h3 class="options-title"><i class="fas fa-image"></i> Nền</h3>
+                        <div class="options-grid">
+                            <div class="option-item selected" data-image="https://via.placeholder.com/600x400/ffb6c1/000000?text=Happy+1st+Anniversary+(Pink+Heart)">
+                                <div class="option-thumbnail">Nền 1</div>
+                                <div class="option-name">Happy 1st Anniversary</div>
+                            </div>
+                            <div class="option-item" data-image="https://via.placeholder.com/600x400/808080/ffffff?text=Nền+Xám">
+                                <div class="option-thumbnail">Nền 2</div>
+                                <div class="option-name">Happy Valentine's</div>
+                            </div>
+                            <div class="option-item" data-image="https://via.placeholder.com/600x400/ffffff/000000?text=Nền+Trắng">
+                                <div class="option-thumbnail">Nền 3</div>
+                                <div class="option-name">Happy 1 st Anniversary</div>
+                            </div>
+                            <div class="option-item" data-image="https://via.placeholder.com/600x400/000000/ffffff?text=Nền+Đen">
+                                <div class="option-thumbnail">Nền 4</div>
+                                <div class="option-name">Happy Birthday </div>
+                            </div>
+                            <div class="option-item" data-image="https://via.placeholder.com/600x400/ffcccb/000000?text=Nền+Hồng+Đào">
+                                <div class="option-thumbnail">Nền 5</div>
+                                <div class="option-name"> Happy Graduation</div>
+                            </div>
+                            <div class="option-item" data-image="https://via.placeholder.com/600x400/0000ff/ffffff?text=Nền+Xanh+Dương">
+                                <div class="option-thumbnail">Nền 6</div>
+                                <div class="option-name"> Sportify Music</div>
+                            </div>
+                            <div class="option-item" data-image="https://via.placeholder.com/600x400/800080/ffffff?text=Nền+Tím">
+                                <div class="option-thumbnail">Nền 7</div>
+                                <div class="option-name">Happy Graduation</div>
+                            </div>
+                            <div class="option-item" data-image="https://via.placeholder.com/600x400/800080/ffffff?text=Love+Album">
+                                <div class="option-thumbnail">Nền 8</div>
+                                 <div class="option-name">Love Album 1</div>
+                            </div>
+                            <div class="option-item" data-image="https://via.placeholder.com/600x400/800080/ffffff?text=Love+Album">
+                                <div class="option-thumbnail">Nền 9</div>
+                                 <div class="option-name">Love Album 2</div>
+                            </div>
+                            <div class="option-item" data-image="https://via.placeholder.com/600x400/800080/ffffff?text=Love+Album">
+                                <div class="option-thumbnail">Nền 10</div>
+                                 <div class="option-name">Since We Met</div>
+                            </div>
+                        </div>
+                        <div class="option-note">
+                            <p>Ghi chú: Tùy chỉnh tên, ngày sinh, kỷ niệm...</p>
+                            <textarea placeholder="Ví dụ: Tên: Nguyễn Văn A, Ngày: 01/01/2000..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <!-- Clothing Options -->
+                    <div class="options-section">
+                        <h3 class="options-title"><i class="fas fa-tshirt"></i> Áo & Quần</h3>
+                        <div class="character-options">
+                            <div class="character-column">
+                                <div class="character-title">Nhân vật 1 (bên trái)</div>
+                                
+                                <div class="option-group-title">Áo:</div>
+                                <div class="color-options-grid">
+                                    <div class="color-option selected" style="background-color: #ffb6c1;" data-color="Hồng pastel" data-type="shirt1"></div>
+                                    <div class="color-option" style="background-color: #808080;" data-color="Xám" data-type="shirt1"></div>
+                                    <div class="color-option" style="background-color: #ffffff;" data-color="Trắng" data-type="shirt1"></div>
+                                    <div class="color-option" style="background-color: #000000;" data-color="Đen" data-type="shirt1"></div>
+                                    <div class="color-option" style="background-color: #ffcccb;" data-color="Hồng đào" data-type="shirt1"></div>
+                                    <div class="color-option" style="background-color: #0000ff;" data-color="Xanh dương" data-type="shirt1"></div>
+                                    <div class="color-option" style="background-color: #800080;" data-color="Tím" data-type="shirt1"></div>
+                                </div>
+                                
+                                <div class="option-group-title">Quần:</div>
+                                <div class="color-options-grid">
+                                    <div class="color-option selected" style="background-color: #ffb6c1;" data-color="Hồng pastel" data-type="pants1"></div>
+                                    <div class="color-option" style="background-color: #808080;" data-color="Xám" data-type="pants1"></div>
+                                    <div class="color-option" style="background-color: #ffffff;" data-color="Trắng" data-type="pants1"></div>
+                                    <div class="color-option" style="background-color: #000000;" data-color="Đen" data-type="pants1"></div>
+                                    <div class="color-option" style="background-color: #ffcccb;" data-color="Hồng đào" data-type="pants1"></div>
+                                    <div class="color-option" style="background-color: #0000ff;" data-color="Xanh dương" data-type="pants1"></div>
+                                    <div class="color-option" style="background-color: #800080;" data-color="Tím" data-type="pants1"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="character-column">
+                                <div class="character-title">Nhân vật 2 (bên phải)</div>
+                                
+                                <div class="option-group-title">Áo:</div>
+                                <div class="color-options-grid">
+                                    <div class="color-option selected" style="background-color: #ffffff;" data-color="Trắng" data-type="shirt2"></div>
+                                    <div class="color-option" style="background-color: #ffb6c1;" data-color="Hồng pastel" data-type="shirt2"></div>
+                                    <div class="color-option" style="background-color: #808080;" data-color="Xám" data-type="shirt2"></div>
+                                    <div class="color-option" style="background-color: #000000;" data-color="Đen" data-type="shirt2"></div>
+                                    <div class="color-option" style="background-color: #ffcccb;" data-color="Hồng đào" data-type="shirt2"></div>
+                                    <div class="color-option" style="background-color: #0000ff;" data-color="Xanh dương" data-type="shirt2"></div>
+                                    <div class="color-option" style="background-color: #800080;" data-color="Tím" data-type="shirt2"></div>
+                                </div>
+                                
+                                <div class="option-group-title">Quần:</div>
+                                <div class="color-options-grid">
+                                    <div class="color-option selected" style="background-color: #000000;" data-color="Đen" data-type="pants2"></div>
+                                    <div class="color-option" style="background-color: #ffb6c1;" data-color="Hồng pastel" data-type="pants2"></div>
+                                    <div class="color-option" style="background-color: #808080;" data-color="Xám" data-type="pants2"></div>
+                                    <div class="color-option" style="background-color: #ffffff;" data-color="Trắng" data-type="pants2"></div>
+                                    <div class="color-option" style="background-color: #ffcccb;" data-color="Hồng đào" data-type="pants2"></div>
+                                    <div class="color-option" style="background-color: #0000ff;" data-color="Xanh dương" data-type="pants2"></div>
+                                    <div class="color-option" style="background-color: #800080;" data-color="Tím" data-type="pants2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Face Options - Now allows multiple selection -->
+                    <div class="options-section">
+                        <h3 class="options-title"><i class="fas fa-smile"></i> Khuôn Mặt</h3>
+                        <p style="margin-bottom: 12px; color: var(--light-pink);">
+                            <i class="fas fa-gift"></i> Miễn phí 5 lựa chọn (chọn tối đa 2)
+                        </p>
+                        <div class="options-grid">
+                            <div class="option-item selected">
+                                <div class="option-thumbnail">Mặt 1</div>
+                                <div class="option-name">Kiểu 1</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Mặt 2</div>
+                                <div class="option-name">Kiểu 2</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Mặt 3</div>
+                                <div class="option-name">Kiểu 3</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Mặt 4</div>
+                                <div class="option-name">Kiểu 4</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Mặt 5</div>
+                                <div class="option-name">Kiểu 5</div>
+                            </div>
+                        </div>
+                        <div class="max-selection-info">(Chọn tối đa 2 khuôn mặt)</div>
+                    </div>
+                    
+                    <!-- Hair Options -->
+                    <div class="options-section">
+                        <h3 class="options-title"><i class="fas fa-user"></i> Tóc Nam</h3>
+                        <p style="margin-bottom: 12px; color: var(--light-pink);">
+                            <i class="fas fa-tag"></i> +25.000₫/lựa chọn
+                        </p>
+                        <div class="options-grid">
+                            <div class="option-item selected">
+                                <div class="option-thumbnail">Tóc 1</div>
+                                <div class="option-name">Kiểu 1</div>
+                                <div class="option-price">+25.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Tóc 2</div>
+                                <div class="option-name">Kiểu 2</div>
+                                <div class="option-price">+25.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Tóc 3</div>
+                                <div class="option-name">Kiểu 3</div>
+                                <div class="option-price">+25.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Tóc 4</div>
+                                <div class="option-name">Kiểu 4</div>
+                                <div class="option-price">+25.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Tóc 5</div>
+                                <div class="option-name">Kiểu 5</div>
+                                <div class="option-price">+25.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Tóc 6</div>
+                                <div class="option-name">Kiểu 6</div>
+                                <div class="option-price">+25.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Tóc 7</div>
+                                <div class="option-name">Kiểu 7</div>
+                                <div class="option-price">+25.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Tóc 8</div>
+                                <div class="option-name">Kiểu 8</div>
+                                <div class="option-price">+25.000₫</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Female Hair Options -->
+                    <div class="options-section">
+                        <h3 class="options-title"><i class="fas fa-user-alt"></i> Tóc Nữ</h3>
+                        <p style="margin-bottom: 12px; color: var(--light-pink);">
+                            <i class="fas fa-tag"></i> +25.000₫/lựa chọn
+                        </p>
+                        <div class="options-grid">
+                            <div class="option-item">
+                                <div class="option-thumbnail">Tóc 1</div>
+                                <div class="option-name">Kiểu 1</div>
+                                <div class="option-price">+25.000₫</div>
+                            </div>
+                            <div class="option-item selected">
+                                <div class="option-thumbnail">Tóc 2</div>
+                                <div class="option-name">Kiểu 2</div>
+                                <div class="option-price">+25.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Tóc 3</div>
+                                <div class="option-name">Kiểu 3</div>
+                                <div class="option-price">+25.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Tóc 4</div>
+                                <div class="option-name">Kiểu 4</div>
+                                <div class="option-price">+25.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Tóc 5</div>
+                                <div class="option-name">Kiểu 5</div>
+                                <div class="option-price">+25.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Tóc 6</div>
+                                <div class="option-name">Kiểu 6</div>
+                                <div class="option-price">+25.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">Tóc 7</div>
+                                <div class="option-name">Kiểu 7</div>
+                                <div class="option-price">+25.000₫</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Accessories Options - 35 mẫu -->
+                    <div class="options-section">
+                        <h3 class="options-title"><i class="fas fa-mobile-alt"></i> Phụ Kiện Cầm Tay</h3>
+                        <p style="margin-bottom: 12px; color: var(--light-pink);">
+                            <i class="fas fa-tag"></i> +10.000₫/mỗi phụ kiện (chọn nhiều)
+                        </p>
+                        <div class="options-grid">
+                            <!-- 35 phụ kiện -->
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK1</div>
+                                <div class="option-name">Điện thoại</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK2</div>
+                                <div class="option-name">Bó hoa</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK3</div>
+                                <div class="option-name">Máy ảnh</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK4</div>
+                                <div class="option-name">Bia</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item selected">
+                                <div class="option-thumbnail">PK5</div>
+                                <div class="option-name">Nón</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK6</div>
+                                <div class="option-name">Túi Đeo Chéo</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK7</div>
+                                <div class="option-name">Guitar</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK8</div>
+                                <div class="option-name">Túi Xách Hồng</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK9</div>
+                                <div class="option-name">Mũ Tốt Nghiệp</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK10</div>
+                                <div class="option-name">Tay Cầm Game</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK11</div>
+                                <div class="option-name">Khăn Đen</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK12</div>
+                                <div class="option-name">Khăn Trắng</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK13</div>
+                                <div class="option-name">Khăn Đỏ</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK14</div>
+                                <div class="option-name">Kem</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK15</div>
+                                <div class="option-name">Bánh Croissant</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK16</div>
+                                <div class="option-name">Kim Cương</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK17</div>
+                                <div class="option-name">Xe Máy</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK18</div>
+                                <div class="option-name">Điện Thoại</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK19</div>
+                                <div class="option-name">Lược</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK20</div>
+                                <div class="option-name">Đàn Piano</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK21</div>
+                                <div class="option-name">Xương</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK22</div>
+                                <div class="option-name">Túi Xách Nâu</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK23</div>
+                                <div class="option-name">Xương</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK24</div>
+                                <div class="option-name">Cà Rốt</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK25</div>
+                                <div class="option-name">Hoa</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK26</div>
+                                <div class="option-name">Hoa Anh Đào</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK27</div>
+                                <div class="option-name">Bánh Pretzel</div>
+                                <div class="option-price">+10.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">PK28</div>
+                                <div class="option-name">Máy tính</div>
+                                <div class="option-price">+10.000₫</div>
+                            
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pets Options - 12 mẫu -->
+                    <div class="options-section">
+                        <h3 class="options-title"><i class="fas fa-paw"></i> Thú Cưng</h3>
+                        <p style="margin-bottom: 12px; color: var(--light-pink);">
+                            <i class="fas fa-tag"></i> +15.000₫/mỗi thú cưng (chọn nhiều)
+                        </p>
+                        <div class="options-grid">
+                            <div class="option-item">
+                                <div class="option-thumbnail">TC1</div>
+                                <div class="option-name">Mèo Hồng</div>
+                                <div class="option-price">+15.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">TC2</div>
+                                <div class="option-name">Chó</div>
+                                <div class="option-price">+15.000₫</div>
+                            </div>
+                            <div class="option-item selected">
+                                <div class="option-thumbnail">TC3</div>
+                                <div class="option-name">Cá</div>
+                                <div class="option-price">+15.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">TC4</div>
+                                <div class="option-name">Hạc</div>
+                                <div class="option-price">+15.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">TC5</div>
+                                <div class="option-name">Thỏ Hồng</div>
+                                <div class="option-price">+15.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">TC6</div>
+                                <div class="option-name">Thỏ Vàng</div>
+                                <div class="option-price">+15.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">TC7</div>
+                                <div class="option-name">Cá Heo</div>
+                                <div class="option-price">+15.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">TC8</div>
+                                <div class="option-name">Thỏ Nâu</div>
+                                <div class="option-price">+15.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">TC9</div>
+                                <div class="option-name">Mèo Xám</div>
+                                <div class="option-price">+15.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">TC10</div>
+                                <div class="option-name">Lợn</div>
+                                <div class="option-price">+15.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">TC11</div>
+                                <div class="option-name">Gấu Nâu</div>
+                                <div class="option-price">+15.000₫</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-thumbnail">TC12</div>
+                                <div class="option-name">Gấu Vàng</div>
+                                <div class="option-price">+15.000₫</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h3 class="summary-title">ĐƠN HÀNG CỦA BẠN</h3>
+                <div class="summary-items" id="order-summary">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+                
+                <div class="discount-section">
+                    <input type="text" class="discount-input" placeholder="Nhập mã giảm giá" value="TILE10">
+                    <button class="apply-button">Áp dụng</button>
+                </div>
+                
+                <div class="discount-result valid">
+                    Bạn tiết kiệm: 30.500₫ - Thanh toán: 274.500₫
+                </div>
+            </div>
+            
+            <!-- Checkout Form -->
+            <div class="checkout-form">
+                <h3 class="form-title">Điền thông tin & hoàn tất đơn hàng</h3>
+                
+                <div class="form-group">
+                    <label class="form-label required">Họ và tên</label>
+                    <input type="text" class="form-input" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label required">Số điện thoại</label>
+                        <input type="tel" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Email (để nhận hoá đơn)</label>
+                        <input type="email" class="form-input">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label required">Địa chỉ giao hàng</label>
+                    <input type="text" class="form-input" placeholder="Số nhà, đường" required>
+                    <input type="text" class="form-input" placeholder="Quận/Huyện" style="margin-top: 10px;" required>
+                    <input type="text" class="form-input" placeholder="Thành phố" style="margin-top: 10px;" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Ghi chú</label>
+                    <textarea class="form-input" rows="3" placeholder="Ví dụ: Tên viết in hoa, ký tự đặc biệt..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label required">Phương thức giao hàng</label>
+                    <select class="form-input" id="shipping-method" required>
+                        <option value="">-- Chọn --</option>
+                        <option value="standard">Giao hàng thường (3-7 ngày) +30.000₫</option>
+                        <option value="express">Giao hàng nhanh (1-3 ngày) - Liên hệ shop để biết phí (37-45k)</option>
+                    </select>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="policy-agreement" required>
+                    <label for="policy-agreement">Tôi đồng ý với <a href="#" class="policy-link">chính sách bảo hành & điều khoản</a> của the luvin</label>
+                </div>
+                
+                <button class="cta-button">Xác nhận & Thanh toán</button>
+                <p style="text-align: center; margin-top: 15px; font-size: 0.9rem;">
+                    Sau khi đặt, the luvin sẽ liên hệ trong 24h để confirm & gửi ảnh demo.
+                </p>
+            </div>
+            
+            <div class="countdown" style="margin-top: 30px; text-align: center;">
+                Chương trình giảm giá kết thúc trong: <span id="section-countdown">23:59:59</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="policy-section">
+                <div class="policy-box">
+                    <h3><i class="fas fa-shield-alt"></i> Chính sách bảo hành</h3>
+                    <ul class="policy-list">
+                        <li>Hoàn tiền <span class="highlight">70%</span> nếu sản phẩm lỗi do shop</li>
+                        <li>Nếu lỗi do bưu điện: Shop hỗ trợ <span class="highlight">50% phí ship</span>, khách hàng chịu 50%</li>
+                        <li>Không hỗ trợ đổi trả với sản phẩm custom</li>
+                    </ul>
+                </div>
+                
+                <div class="policy-box">
+                    <h3><i class="fas fa-money-bill-wave"></i> Thanh toán & Giao hàng</h3>
+                    <ul class="policy-list">
+                        <li>Thanh toán trước <span class="highlight">100%</span> giá trị đơn hàng</li>
+                        <li>Không áp dụng COD cho sản phẩm custom</li>
+                        <li>Thời gian sản xuất: <span class="highlight">1-2 ngày</span></li>
+                        <li>Giao hàng thường: 3-7 ngày (phí 30.000₫)</li>
+                        <li>Giao hàng nhanh: 1-3 ngày (phí 37-45k tùy khu vực)</li>
+                        <li>Giữ đơn trong <span class="highlight">24 giờ</span>, sau đó tự động hủy</li>
+                    </ul>
+                </div>
+                
+                <div class="policy-box">
+                    <h3><i class="fas fa-headset"></i> Liên hệ & Hỗ trợ</h3>
+                    <ul class="policy-list">
+                        <li>Hotline: <span class="highlight">0964.393.115</span></li>
+                        <li>Email: theluvin.gifts@gmail.com</li>
+                        <li>Địa chỉ: Hà Nội</li>
+                        <li>Giờ làm việc: <span class="highlight">Full time</span> (24/7 hỗ trợ đặt hàng)</li>
+                        <li>Liên hệ nhận ảnh demo sau khi đặt hàng</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link tiktok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            
+            <div class="copyright">
+                © 2025 the luvin. Đã đăng ký bản quyền.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-option-nav">
+        <a href="#" class="option-nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Trang chủ</span>
+        </a>
+        <a href="#" class="option-nav-item">
+            <i class="fas fa-cog"></i>
+            <span>Tùy chọn</span>
+        </a>
+        <a href="#" class="option-nav-item">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Đơn hàng</span>
+        </a>
+        <a href="#" class="option-nav-item">
+            <i class="fas fa-headset"></i>
+            <span>Hỗ trợ</span>
+        </a>
+    </div>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const endTime = new Date(now.getTime() + 24 * 60 * 60 * 1000); // 24 hours from now
+            
+            const timer = setInterval(function() {
+                const now = new Date();
+                const difference = endTime - now;
+                
+                if (difference <= 0) {
+                    clearInterval(timer);
+                    document.getElementById('countdown-timer').textContent = "00:00:00";
+                    document.getElementById('section-countdown').textContent = "00:00:00";
+                    // Disable buttons and show message
+                    return;
+                }
+                
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+                
+                const formatted = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                document.getElementById('countdown-timer').textContent = formatted;
+                document.getElementById('section-countdown').textContent = formatted;
+            }, 1000);
+        }
+        
+        // Image zoom functionality
+        const modal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('zoomed-image');
+        const closeModal = document.querySelector('.close-modal');
+        
+        document.getElementById('zoom-image').addEventListener('click', function() {
+            const currentImage = document.querySelector('.main-image-container img');
+            modal.style.display = "flex";
+            modalImg.src = currentImage.src;
+        });
+        
+        document.getElementById('main-hero-image').addEventListener('click', function() {
+            const currentImage = document.querySelector('.hero-image img');
+            modal.style.display = "flex";
+            modalImg.src = currentImage.src;
+        });
+        
+        closeModal.addEventListener('click', function() {
+            modal.style.display = "none";
+        });
+        
+        window.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+        
+        // Initialize options selection
+        document.querySelectorAll('.version-card').forEach(card => {
+            card.addEventListener('click', function() {
+                document.querySelectorAll('.version-card').forEach(c => c.classList.remove('selected'));
+                this.classList.add('selected');
+                updateOrderSummary();
+            });
+        });
+        
+        // Handle option selection with special logic for faces
+        document.querySelectorAll('.option-item').forEach(option => {
+            option.addEventListener('click', function() {
+                const section = this.closest('.options-section');
+                const isFaceSection = section.querySelector('h3').textContent.includes('Mặt');
+                const isAccessoryOrPet = section.querySelector('h3').textContent.includes('Phụ Kiện') || 
+                                         section.querySelector('h3').textContent.includes('Thú Cưng');
+                
+                // Special handling for face section (max 2 selections)
+                if (isFaceSection) {
+                    const selectedFaces = section.querySelectorAll('.option-item.selected');
+                    if (this.classList.contains('selected')) {
+                        this.classList.remove('selected');
+                    } else {
+                        if (selectedFaces.length < 2) {
+                            this.classList.add('selected');
+                        } else {
+                            alert('Bạn chỉ được chọn tối đa 2 khuôn mặt');
+                        }
+                    }
+                } 
+                // Handling for accessories and pets (multiple selections)
+                else if (isAccessoryOrPet) {
+                    this.classList.toggle('selected');
+                } 
+                // Handling for other sections (single selection)
+                else {
+                    const siblings = this.parentElement.querySelectorAll('.option-item');
+                    siblings.forEach(sib => sib.classList.remove('selected'));
+                    this.classList.add('selected');
+                }
+                
+                // Update preview image if data-image attribute exists
+                const imageUrl = this.dataset.image;
+                if (imageUrl) {
+                    document.querySelector('.main-image-container img').src = imageUrl;
+                    document.querySelector('.hero-image img').src = imageUrl;
+                }
+                
+                updateOrderSummary();
+            });
+        });
+        
+        // Color options handling
+        document.querySelectorAll('.color-option').forEach(option => {
+            option.addEventListener('click', function() {
+                const type = this.dataset.type;
+                const siblings = this.parentElement.querySelectorAll(`.color-option[data-type="${type}"]`);
+                siblings.forEach(sib => sib.classList.remove('selected'));
+                this.classList.add('selected');
+                updateOrderSummary();
+            });
+        });
+        
+        // Apply discount code
+        document.querySelector('.apply-button').addEventListener('click', function() {
+            const discountInput = document.querySelector('.discount-input');
+            const discountResult = document.querySelector('.discount-result');
+            
+            if (discountInput.value === "TILE10") {
+                discountResult.textContent = "Bạn tiết kiệm: 30.500₫ - Thanh toán: 274.500₫";
+                discountResult.classList.remove('invalid');
+                discountResult.classList.add('valid');
+            } else {
+                discountResult.textContent = "Mã không hợp lệ hoặc đã hết hạn";
+                discountResult.classList.remove('valid');
+                discountResult.classList.add('invalid');
+            }
+        });
+        
+        // Update order summary
+        function updateOrderSummary() {
+            const summaryContainer = document.getElementById('order-summary');
+            let html = '';
+            let total = 0;
+            
+            // Get selected version
+            const selectedVersion = document.querySelector('.version-card.selected');
+            const versionPrice = parseInt(selectedVersion.dataset.price);
+            const versionName = selectedVersion.querySelector('h3').textContent;
+            const legoCount = selectedVersion.dataset.version === "1" ? "01 Lego" : "02 Lego";
+            
+            html += `<div class="summary-item">
+                        <span>${versionName} (${legoCount})</span>
+                        <span>${versionPrice.toLocaleString()}₫</span>
+                    </div>`;
+            total += versionPrice;
+            
+            // Get selected hair male
+            const selectedHairMale = document.querySelector('.options-section:nth-child(5) .option-item.selected');
+            if (selectedHairMale) {
+                html += `<div class="summary-item">
+                            <span>Tóc nam: ${selectedHairMale.querySelector('.option-name').textContent}</span>
+                            <span>+25.000₫</span>
+                        </div>`;
+                total += 25000;
+            }
+            
+            // Get selected hair female
+            const selectedHairFemale = document.querySelector('.options-section:nth-child(6) .option-item.selected');
+            if (selectedHairFemale) {
+                html += `<div class="summary-item">
+                            <span>Tóc nữ: ${selectedHairFemale.querySelector('.option-name').textContent}</span>
+                            <span>+25.000₫</span>
+                        </div>`;
+                total += 25000;
+            }
+            
+            // Get selected faces
+            const selectedFaces = document.querySelectorAll('.options-section:nth-child(3) .option-item.selected');
+            if (selectedFaces.length > 0) {
+                const faceNames = Array.from(selectedFaces).map(face => face.querySelector('.option-name').textContent).join(', ');
+                html += `<div class="summary-item">
+                            <span>Khuôn mặt: ${faceNames}</span>
+                            <span>Miễn phí</span>
+                        </div>`;
+            }
+            
+            // Get selected accessories (multiple)
+            const selectedAccessories = document.querySelectorAll('.options-section:nth-child(7) .option-item.selected');
+            if (selectedAccessories.length > 0) {
+                html += `<div class="summary-item">
+                            <span>Phụ kiện (${selectedAccessories.length} món)</span>
+                            <span>+${(selectedAccessories.length * 10000).toLocaleString()}₫</span>
+                        </div>`;
+                total += selectedAccessories.length * 10000;
+            }
+            
+            // Get selected pets (multiple)
+            const selectedPets = document.querySelectorAll('.options-section:nth-child(8) .option-item.selected');
+            if (selectedPets.length > 0) {
+                html += `<div class="summary-item">
+                            <span>Thú cưng (${selectedPets.length} con)</span>
+                            <span>+${(selectedPets.length * 15000).toLocaleString()}₫</span>
+                        </div>`;
+                total += selectedPets.length * 15000;
+            }
+            
+            // Get shipping cost
+            const shippingMethod = document.getElementById('shipping-method').value;
+            let shippingCost = 0;
+            let shippingText = "";
+            
+            if (shippingMethod === "standard") {
+                shippingCost = 30000;
+                shippingText = "Giao thường: +30.000₫";
+            } else if (shippingMethod === "express") {
+                shippingCost = 37000; // Default for express
+                shippingText = "Giao nhanh: +37.000₫ (tối thiểu)";
+            }
+            
+            if (shippingCost > 0) {
+                html += `<div class="summary-item">
+                            <span>${shippingText}</span>
+                            <span>+${shippingCost.toLocaleString()}₫</span>
+                        </div>`;
+                total += shippingCost;
+            }
+            
+            // Total
+            html += `<div class="summary-item total">
+                        <span>Tổng cộng:</span>
+                        <span>${total.toLocaleString()}₫</span>
+                    </div>`;
+            
+            summaryContainer.innerHTML = html;
+        }
+        
+        // Initialize
+        updateCountdown();
+        document.getElementById('shipping-method').addEventListener('change', updateOrderSummary);
+        updateOrderSummary();
+    </script>
+</body>
+</html>
